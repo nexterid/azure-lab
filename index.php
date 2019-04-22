@@ -79,6 +79,12 @@
             alert(errorString);
         });
     };
+
+    function addUrl(){
+        // alert('masuk sini gan');
+        var buttonValue = $("button").val();
+        $('#inputImage').val(buttonValue);
+    }
 </script>
 	<h1>Analisa Gambar:</h1>
 	<form method="post" action="index.php" enctype="multipart/form-data">
@@ -148,7 +154,7 @@
 				{
 					echo "<tr><td>".$blob->getName()."</td>";
 					echo "<td>".$blob->getUrl()."</td>";
-					echo "<td>Aksi</td></tr>";
+					echo '<td><button type="button" id="button" value="'.$blob->getUrl().'" onclick="addUrl()">add to analyze</button></td></tr>';
 
 					// echo "Tampikan data gan : ".$blob->getName().": ".$blob->getUrl()."<br />";
 				}
