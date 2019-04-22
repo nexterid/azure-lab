@@ -99,7 +99,7 @@
 	use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 	use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
-	$connectionString = "DefaultEndpointsProtocol=https;AccountName=".getenv('ACCOUNT_NAME').";AccountKey=".getenv('ACCOUNT_KEY');	
+	$connectionString = "DefaultEndpointsProtocol=https;AccountName='nexterwebapp';AccountKey='VrLKt6SLomftyLtswrtlE5ef50buuKHHwdHdNsGyyePUxU1mWyZpXqJbnJVIp8cx++RFbFiM/XWqFzqNBY7OcQ=='";	
 	// Create blob client.
 	$blobClient = BlobRestProxy::createBlobService($connectionString);
 	
